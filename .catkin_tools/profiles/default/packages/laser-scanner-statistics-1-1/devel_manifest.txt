@@ -1,0 +1,5 @@
+exercise-001/laser-scanner-statistics-1-1
+/home/vm/ARS-ROS-Exercises/devel/.private/laser-scanner-statistics-1-1/cmake.lock /home/vm/ARS-ROS-Exercises/devel/./cmake.lock
+/home/vm/ARS-ROS-Exercises/devel/.private/laser-scanner-statistics-1-1/share/laser-scanner-statistics-1-1/cmake/laser-scanner-statistics-1-1Config-version.cmake /home/vm/ARS-ROS-Exercises/devel/share/laser-scanner-statistics-1-1/cmake/laser-scanner-statistics-1-1Config-version.cmake
+/home/vm/ARS-ROS-Exercises/devel/.private/laser-scanner-statistics-1-1/share/laser-scanner-statistics-1-1/cmake/laser-scanner-statistics-1-1Config.cmake /home/vm/ARS-ROS-Exercises/devel/share/laser-scanner-statistics-1-1/cmake/laser-scanner-statistics-1-1Config.cmake
+/home/vm/ARS-ROS-Exercises/devel/.private/laser-scanner-statistics-1-1/lib/pkgconfig/laser-scanner-statistics-1-1.pc /home/vm/ARS-ROS-Exercises/devel/lib/pkgconfig/laser-scanner-statistics-1-1.pc

@@ -1,0 +1,5 @@
+exercise-001/my-odometry-1-2
+/home/vm/ARS-ROS-Exercises/devel/.private/my-odometry-1-2/cmake.lock /home/vm/ARS-ROS-Exercises/devel/./cmake.lock
+/home/vm/ARS-ROS-Exercises/devel/.private/my-odometry-1-2/share/my-odometry-1-2/cmake/my-odometry-1-2Config-version.cmake /home/vm/ARS-ROS-Exercises/devel/share/my-odometry-1-2/cmake/my-odometry-1-2Config-version.cmake
+/home/vm/ARS-ROS-Exercises/devel/.private/my-odometry-1-2/share/my-odometry-1-2/cmake/my-odometry-1-2Config.cmake /home/vm/ARS-ROS-Exercises/devel/share/my-odometry-1-2/cmake/my-odometry-1-2Config.cmake
+/home/vm/ARS-ROS-Exercises/devel/.private/my-odometry-1-2/lib/pkgconfig/my-odometry-1-2.pc /home/vm/ARS-ROS-Exercises/devel/lib/pkgconfig/my-odometry-1-2.pc
