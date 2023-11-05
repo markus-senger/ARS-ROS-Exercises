@@ -1,12 +1,22 @@
 #!/usr/bin/env python
 
 import rospy
-from nav_msgs.msg import Odometry
-from geometry_msgs.msg import Twist
-from tf.transformations import euler_from_quaternion, quaternion_from_euler
+import math
+from geometry_msgs.msg import Twist, Pose
 
+def euler_to_quaternion(roll, pitch, yaw):
+    qx = math.sin(roll/2) * math.cos(pitch/2) * math.cos(yaw/2) - math.cos(roll/2) * math.sin(pitch/2) * math.sin(yaw/2)
+    qy = math.cos(roll/2) * math.sin(pitch/2) * math.cos(yaw/2) + math.sin(roll/2) * math.cos(pitch/2) * math.sin(yaw/2)
+    qz = math.cos(roll/2) * math.cos(pitch/2) * math.sin(yaw/2) - math.sin(roll/2) * math.sin(pitch/2) * math.cos(yaw/2)
+    qw = math.cos(roll/2) * math.cos(pitch/2) * math.cos(yaw/2) + math.sin(roll/2) * math.sin(pitch/2) * math.sin(yaw/2)
+    return qx, qy, qz, qw
 
 def cmd_vel_callback(data):
+    global current_x
+    global current_y
+    global current_theta
+    global last_time
+
     current_time = rospy.Time.now()
     dt = (current_time - last_time).to_sec()
     linear_speed = data.linear.x
@@ -16,25 +26,24 @@ def cmd_vel_callback(data):
     current_y += linear_speed * dt * math.sin(current_theta)
     current_theta += angular_speed * dt
 
-    odom = Odometry()
-    odom.header.stamp = current_time
-    odom.header.frame_id = 'odom'
-    odom.child_frame_id = 'base_link'
-    odom.pose.pose.position.x = current_x
-    odom.pose.pose.position.y = current_y
-    q = quaternion_from_euler(0, 0, current_theta)
-    odom.pose.pose.orientation.x = q[0]
-    odom.pose.pose.orientation.y = q[1]
-    odom.pose.pose.orientation.z = q[2]
-    odom.pose.pose.orientation.w = q[3]
+    pose = Pose()
+    pose.position.x = current_x
+    pose.position.y = current_y
+    qx, qy, qz, qw = euler_to_quaternion(0, 0, current_theta)
+    pose.orientation.x = qx
+    pose.orientation.y = qy
+    pose.orientation.z = qz
+    pose.orientation.w = qw
 
-    odom_pub.publish(odom)
+    pose_pub.publish(pose)
     last_time = current_time
 
-rospy.init_node('turtlebot_odometry_calculator')
-odom_pub = rospy.Publisher('my_odom', Odometry, queue_size=10)
+rospy.init_node('turtlebot_pose_calculator')
+pose_pub = rospy.Publisher('my_odom', Pose, queue_size=10)
 cmd_sub = rospy.Subscriber('cmd_vel', Twist, cmd_vel_callback)
 current_x = 0.0
 current_y = 0.0
 current_theta = 0.0
 last_time = rospy.Time.now()
+
+rospy.spin()
