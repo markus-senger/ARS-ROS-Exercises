@@ -41,7 +41,6 @@
     
     <param name="odom_file_path" type="string" value="$(find my-odometry-1-2)/trajectoryTextfiles/trajectory_odom.txt" />
     <param name="my_odom_file_path" type="string" value="$(find my-odometry-1-2)/trajectoryTextfiles/trajectory_my_odom.txt" />
-    <node name="my_trajectory_writer_node" pkg="my-odometry-1-2" type="trajectoryWriter.py" output="screen">
-    </node>
+    <node name="my_trajectory_writer_node" pkg="my-odometry-1-2" type="trajectoryWriter.py" output="screen"/>
 
 </launch>
