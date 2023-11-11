@@ -6,7 +6,7 @@ import csv
 
 def process_steps(probabilities, landmark_positions, landmark_detection_prob, no_landmark_detection_prob):
     csv_file = open('localization_results.csv', 'w')
-    csv_writer = csv.writer(csv_file)
+    csv_writer = csv.writer(csv_file, delimiter=';')
     num_cells = len(probabilities)
     
     csv_writer.writerow(['Step'] + ['Cell {}'.format(i+1) for i in range(num_cells)])
