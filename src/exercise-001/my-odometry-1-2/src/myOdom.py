@@ -18,8 +18,6 @@ def euler_to_quaternion(roll, pitch, yaw):
     return qx, qy, qz, qw
 
 def callback(data):
-    rospy.loginfo(data)
-
     deltaTime = 0
     currentTime = data.header.stamp
 
@@ -57,6 +55,6 @@ def callback(data):
 
 rospy.init_node('turtlebot_pose_calculator')
 pose_pub = rospy.Publisher('my_odom', Pose, queue_size=10)
-cmd_sub = rospy.Subscriber('joint_states', JointState, callback)
+joint_sub = rospy.Subscriber('joint_states', JointState, callback)
 
 rospy.spin()

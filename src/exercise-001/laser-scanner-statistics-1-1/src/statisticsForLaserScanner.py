@@ -47,7 +47,7 @@ def play_rosbag(bag_file_path):
 rospy.init_node('laser_scan_listener_for_statistics')
 rospy.Subscriber('/scan', LaserScan, laser_scan_callback)
 
-bag_file_path = 'src/laser-scanner-statistics-1-1/bagfiles/laserdata_real.bag' 
+bag_file_path = 'src/exercise-001/laser-scanner-statistics-1-1/bagfiles/laserdata_simulation.bag' 
 
 play_thread = threading.Thread(target=lambda: play_rosbag(bag_file_path))
 play_thread.start()
