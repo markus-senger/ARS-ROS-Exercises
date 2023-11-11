@@ -1,0 +1,5 @@
+exercise-002/markov-localization
+/home/vm/ARS-ROS-Exercises/devel/.private/markov-localization/cmake.lock /home/vm/ARS-ROS-Exercises/devel/./cmake.lock
+/home/vm/ARS-ROS-Exercises/devel/.private/markov-localization/share/markov-localization/cmake/markov-localizationConfig.cmake /home/vm/ARS-ROS-Exercises/devel/share/markov-localization/cmake/markov-localizationConfig.cmake
+/home/vm/ARS-ROS-Exercises/devel/.private/markov-localization/share/markov-localization/cmake/markov-localizationConfig-version.cmake /home/vm/ARS-ROS-Exercises/devel/share/markov-localization/cmake/markov-localizationConfig-version.cmake
+/home/vm/ARS-ROS-Exercises/devel/.private/markov-localization/lib/pkgconfig/markov-localization.pc /home/vm/ARS-ROS-Exercises/devel/lib/pkgconfig/markov-localization.pc
