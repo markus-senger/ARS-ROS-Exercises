@@ -21,7 +21,10 @@ def process_steps(probabilities, landmark_positions, landmark_detection_prob, no
 
     for step_num, step in enumerate(steps, 1):
         if 'landmark' in step:
-            probabilities = update_probabilities_landmark(probabilities, landmark_positions, landmark_detection_prob)
+            if step['landmark']:
+                probabilities = update_probabilities_landmark(probabilities, landmark_positions, landmark_detection_prob)
+            else:
+                probabilities = update_probabilities_landmark(probabilities, landmark_positions, no_landmark_detection_prob)
         elif 'move' in step:
             probabilities = update_probabilities_movement(probabilities, step['move'])
 
@@ -31,12 +34,12 @@ def process_steps(probabilities, landmark_positions, landmark_detection_prob, no
 
     csv_file.close()
 
-def update_probabilities_landmark(probabilities, landmark_positions, landmark_detection_prob):
+def update_probabilities_landmark(probabilities, landmark_positions, detection_prob):
     for i in range(len(probabilities)):
         if i + 1 in landmark_positions:
-            probabilities[i] *= landmark_detection_prob
+            probabilities[i] *= detection_prob
         else:
-            probabilities[i] *= (1 - landmark_detection_prob)
+            probabilities[i] *= (1 - detection_prob)
 
     return probabilities / np.sum(probabilities) # normalize
 
