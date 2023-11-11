@@ -41,7 +41,7 @@ def update_probabilities_landmark(probabilities, landmark_positions, landmark_de
     return probabilities / np.sum(probabilities) # normalize
 
 def update_probabilities_movement(probabilities, steps):
-    probabilities = np.roll(probabilities, steps)
+    probabilities = np.roll(probabilities, -steps)
     return probabilities / np.sum(probabilities) # normalize
 
 
