@@ -18,11 +18,12 @@ def euler_to_quaternion(roll, pitch, yaw):
     return qx, qy, qz, qw
 
 def callback(data):
-    deltaTime = 0
+    deltaTime = None
     currentTime = data.header.stamp
 
     vl = data.velocity[0] * 0.033
     vr = data.velocity[1] * 0.033
+
     b = 0.1577
 
     v = (vl + vr) / 2.0
@@ -37,9 +38,15 @@ def callback(data):
     global x
     global y
     global th
-    x = x + (v * deltaTime.to_sec() * math.cos(th))
-    y = y + (v * deltaTime.to_sec() * math.sin(th))
-    th = th + dth * deltaTime.to_sec() 
+
+    if deltaTime is None:
+        deltaTime = 0
+    else:
+        deltaTime = deltaTime.to_sec()
+
+    x = x + (v * deltaTime * math.cos(th))
+    y = y + (v * deltaTime * math.sin(th))
+    th = th + dth * deltaTime
 
     pose = Pose()
     pose.position.x = x

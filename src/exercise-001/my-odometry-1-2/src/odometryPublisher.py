@@ -8,9 +8,26 @@ def odometry_publisher():
     pub = rospy.Publisher('odometry_data', Odometry, queue_size=10)
     pub2 = rospy.Publisher('odometry_data2', Odometry, queue_size=10)
     
-    rate = rospy.Rate(1) 
+    rate = rospy.Rate(10) 
 
-    with open('src/exercise-001/my-odometry-1-2/trajectoryTextfiles/trajectory_odom_real.txt', 'r') as file: 
+    with open('src/exercise-001/my-odometry-1-2/trajectoryTextfiles/trajectory_my_odom.txt', 'r') as file:
+        for line in file:
+            parts = line.strip().split() 
+            if len(parts) == 7:
+                odometry_msg = Odometry()
+                odometry_msg.header.frame_id = "base_link"
+                odometry_msg.pose.pose.position.x = float(parts[0]) 
+                odometry_msg.pose.pose.position.y = float(parts[1])              
+                odometry_msg.pose.pose.position.z = float(parts[2])
+                odometry_msg.pose.pose.orientation.x = float(parts[3])
+                odometry_msg.pose.pose.orientation.y = float(parts[4])
+                odometry_msg.pose.pose.orientation.z = float(parts[5])
+                odometry_msg.pose.pose.orientation.w = float(parts[6])
+
+                pub.publish(odometry_msg)
+            rate.sleep()
+
+    with open('src/exercise-001/my-odometry-1-2/trajectoryTextfiles/trajectory_odom.txt', 'r') as file: 
         for line in file:
             parts = line.strip().split() 
             if len(parts) == 7:
@@ -21,28 +38,10 @@ def odometry_publisher():
                 odometry_msg.pose.pose.position.z = float(parts[2])
                 odometry_msg.pose.pose.orientation.x = float(parts[3])
                 odometry_msg.pose.pose.orientation.y = float(parts[4])
-                odometry_msg.pose.pose.orientation.z = float(parts[5]) - 0.0376496426761
-                odometry_msg.pose.pose.orientation.w = float(parts[6]) - 0.99929100275
-                rospy.loginfo(odometry_msg)
-                pub2.publish(odometry_msg)
-            rate.sleep()
-    with open('src/exercise-001/my-odometry-1-2/trajectoryTextfiles/trajectory_my_odom_real.txt', 'r') as file:
-        for line in file:
-            parts = line.strip().split() 
-            if len(parts) == 7:
-                odometry_msg = Odometry()
-                odometry_msg.header.frame_id = "base_link"
-                odometry_msg.pose.pose.position.x = float(parts[0]) 
-                odometry_msg.pose.pose.position.y = float(parts[1])
-                odometry_msg.pose.pose.position.z = float(parts[2])
-                odometry_msg.pose.pose.orientation.x = float(parts[3])
-                odometry_msg.pose.pose.orientation.y = float(parts[4])
-                odometry_msg.pose.pose.orientation.z = float(parts[5])
+                odometry_msg.pose.pose.orientation.z = float(parts[5]) 
                 odometry_msg.pose.pose.orientation.w = float(parts[6])
 
-                pub.publish(odometry_msg)
+                pub2.publish(odometry_msg)
             rate.sleep()
-
-
 
 odometry_publisher()
