@@ -3,6 +3,12 @@
 import rospy
 import math
 from geometry_msgs.msg import Twist, Pose
+from sensor_msgs.msg import JointState
+
+last_time = None
+th = 0
+x = 0
+y = 0
 
 def euler_to_quaternion(roll, pitch, yaw):
     qx = math.sin(roll/2) * math.cos(pitch/2) * math.cos(yaw/2) - math.cos(roll/2) * math.sin(pitch/2) * math.sin(yaw/2)
@@ -11,39 +17,46 @@ def euler_to_quaternion(roll, pitch, yaw):
     qw = math.cos(roll/2) * math.cos(pitch/2) * math.cos(yaw/2) + math.sin(roll/2) * math.sin(pitch/2) * math.sin(yaw/2)
     return qx, qy, qz, qw
 
-def cmd_vel_callback(data):
-    global current_x
-    global current_y
-    global current_theta
+def callback(data):
+    rospy.loginfo(data)
+
+    deltaTime = 0
+    currentTime = data.header.stamp
+
+    vl = data.velocity[0] * 0.033
+    vr = data.velocity[1] * 0.033
+    b = 0.1577
+
+    v = (vl + vr) / 2.0
+    dth = (vr - vl)/ b
+
     global last_time
+    if last_time is not None:
+        deltaTime = currentTime - last_time 
+    
+    last_time = currentTime
 
-    current_time = rospy.Time.now()
-    dt = (current_time - last_time).to_sec()
-    linear_speed = data.linear.x
-    angular_speed = data.angular.z
-
-    current_x += linear_speed * dt * math.cos(current_theta)
-    current_y += linear_speed * dt * math.sin(current_theta)
-    current_theta += angular_speed * dt
+    global x
+    global y
+    global th
+    x = x + (v * deltaTime.to_sec() * math.cos(th))
+    y = y + (v * deltaTime.to_sec() * math.sin(th))
+    th = th + dth * deltaTime.to_sec() 
 
     pose = Pose()
-    pose.position.x = current_x
-    pose.position.y = current_y
-    qx, qy, qz, qw = euler_to_quaternion(0, 0, current_theta)
+    pose.position.x = x
+    pose.position.y = y
+    qx, qy, qz, qw = euler_to_quaternion(0, 0, th)
     pose.orientation.x = qx
     pose.orientation.y = qy
     pose.orientation.z = qz
     pose.orientation.w = qw
 
     pose_pub.publish(pose)
-    last_time = current_time
+
 
 rospy.init_node('turtlebot_pose_calculator')
 pose_pub = rospy.Publisher('my_odom', Pose, queue_size=10)
-cmd_sub = rospy.Subscriber('cmd_vel', Twist, cmd_vel_callback)
-current_x = 0.0
-current_y = 0.0
-current_theta = 0.0
-last_time = rospy.Time.now()
+cmd_sub = rospy.Subscriber('joint_states', JointState, callback)
 
 rospy.spin()
