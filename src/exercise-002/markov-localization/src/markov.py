@@ -22,26 +22,27 @@ def process_steps(probabilities, landmark_positions, landmark_detection_prob, no
     for step_num, step in enumerate(steps, 1):
         if 'landmark' in step:
             if step['landmark']:
-                probabilities = update_probabilities_landmark(probabilities, landmark_positions, landmark_detection_prob)
+                probabilities = update_probabilities_landmark(probabilities, landmark_positions, landmark_detection_prob, no_landmark_detection_prob)
             else:
-                probabilities = update_probabilities_landmark(probabilities, landmark_positions, no_landmark_detection_prob)
+                probabilities = update_probabilities_landmark(probabilities, landmark_positions, 1-landmark_detection_prob, 1-no_landmark_detection_prob)
         elif 'move' in step:
             probabilities = update_probabilities_movement(probabilities, step['move'])
-
+            
         csv_writer.writerow([step_num] + list(probabilities))
         rospy.loginfo('Current Probabilities: %s', probabilities)
         rospy.sleep(1)
 
     csv_file.close()
 
-def update_probabilities_landmark(probabilities, landmark_positions, detection_prob):
+def update_probabilities_landmark(probabilities, landmark_positions, landmark_detection_prob, no_landmark_detection_prob):
+    updated_probabilities = np.copy(probabilities)
     for i in range(len(probabilities)):
         if i + 1 in landmark_positions:
-            probabilities[i] *= detection_prob
+            updated_probabilities[i] *= landmark_detection_prob
         else:
-            probabilities[i] *= (1 - detection_prob)
+            updated_probabilities[i] *= no_landmark_detection_prob
 
-    return probabilities / np.sum(probabilities) # normalize
+    return updated_probabilities / np.sum(updated_probabilities)  # normalize
 
 def update_probabilities_movement(probabilities, steps):
     probabilities = np.roll(probabilities, -steps)
