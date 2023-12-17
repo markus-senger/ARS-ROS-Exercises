@@ -1,0 +1,1583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version='1.6'>
+  <model name='tgw_arena'>
+    <pose frame=''>2.03 -2.53248 0 0 -0 0</pose>
+    <link name='Wall_20'>
+      <collision name='Wall_20_Collision'>
+        <geometry>
+          <box>
+            <size>5.005 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_20_Visual'>
+        <cast_shadows>false</cast_shadows>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>5.005 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>tgw_logo</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-2.03 0.034982 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_27'>
+      <collision name='Wall_27_Collision'>
+        <geometry>
+          <box>
+            <size>4 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_27_Visual'>
+        <cast_shadows>false</cast_shadows>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>4 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>tgw_logo</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.035 -2.46252 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_29'>
+      <collision name='Wall_29_Collision'>
+        <geometry>
+          <box>
+            <size>4.551 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_29_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>4.551 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>tgw_logo</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.96 -0.192018 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wall_30'>
+      <collision name='Wall_30_Collision'>
+        <geometry>
+          <box>
+            <size>0.5 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_30_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.5 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.715 2.07848 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_31'>
+      <collision name='Wall_31_Collision'>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_31_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.47 2.25348 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wareneingang_3'>
+      <collision name='Wareneingang_3_Collision'>
+        <geometry>
+          <box>
+            <size>0.5 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wareneingang_3_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.5 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>wareneingang3</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.225 2.42848 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_33'>
+      <collision name='Wall_33_Collision'>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_33_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.98 2.25348 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_34'>
+      <collision name='Wall_34_Collision'>
+        <geometry>
+          <box>
+            <size>0.5 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_34_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.5 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.735 2.07848 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_36'>
+      <collision name='Wall_36_Collision'>
+        <geometry>
+          <box>
+            <size>0.469 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_36_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.469 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.2605 2.42848 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_38'>
+      <collision name='Wall_38_Collision'>
+        <geometry>
+          <box>
+            <size>0.498065 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_38_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.498065 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.2135 2.07898 0 0 -0 3.13955</pose>
+    </link>
+    <link name='Wall_39'>
+      <collision name='Wall_39_Collision'>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_39_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.458 2.25448 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wall_40'>
+      <collision name='Wall_40_Collision'>
+        <geometry>
+          <box>
+            <size>0.5 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_40_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.5 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.703 2.42948 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_41'>
+      <collision name='Wall_41_Collision'>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_41_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.948 2.25448 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_42'>
+      <collision name='Wall_42_Collision'>
+        <geometry>
+          <box>
+            <size>0.492 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_42_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.492 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-1.189 2.07948 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_57'>
+      <collision name='Wall_57_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_57_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.98 1.53346 0 0 -0 -0.003921</pose>
+    </link>
+    <link name='Wall_58'>
+      <collision name='Wall_58_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_58_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.73 1.03248 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_59'>
+      <collision name='Wall_59_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_59_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.98 0.533462 0 0 -0 3.13767</pose>
+    </link>
+    <link name='Wall_60'>
+      <collision name='Wall_60_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_60_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-1.23 1.03346 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wall_62'>
+      <collision name='Wall_62_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_62_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.13 1.03248 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_63'>
+      <collision name='Wall_63_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_63_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.12 0.532482 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_64'>
+      <collision name='Wall_64_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_64_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.37 1.03248 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wall_65'>
+      <collision name='Wall_65_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_65_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.12 1.53248 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_71'>
+      <collision name='Wall_71_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_71_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+         <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.97 1.03248 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_72'>
+      <collision name='Wall_72_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_72_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.22 0.532482 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_73'>
+      <collision name='Wall_73_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_73_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.47 1.03248 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wall_74'>
+      <collision name='Wall_74_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_74_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.22 1.53248 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_76'>
+      <collision name='Wall_76_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_76_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-1.23 -0.467518 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_77'>
+      <collision name='Wall_77_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_77_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.98 -0.967518 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_78'>
+      <collision name='Wall_78_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_78_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.73 -0.467518 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wall_79'>
+      <collision name='Wall_79_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_79_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.98 0.032482 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_81'>
+      <collision name='Wall_81_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_81_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.13 -0.467518 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_82'>
+      <collision name='Wall_82_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_82_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.12 -0.967518 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_83'>
+      <collision name='Wall_83_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_83_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.37 -0.467518 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wall_84'>
+      <collision name='Wall_84_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_84_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.12 0.032482 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_86'>
+      <collision name='Wall_86_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_86_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.97 -0.467518 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_87'>
+      <collision name='Wall_87_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_87_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.22 -0.967518 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_88'>
+      <collision name='Wall_88_Collision'>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_88_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.01 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.47 -0.467518 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wall_89'>
+      <collision name='Wall_89_Collision'>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_89_Visual'>
+        <pose frame=''>0 0 0.4 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.51 0.01 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>regal_boxen</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.22 0.032482 0 0 -0 3.14159</pose>
+    </link>
+    <link name='Wall_93'>
+      <collision name='Wall_93_Collision'>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_93_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.49 2.25348 0 0 -0 1.5708</pose>
+    </link>
+    <link name='Wall_96'>
+      <collision name='Wall_96_Collision'>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_96_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.36 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.031 2.25348 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Wall_98'>
+      <collision name='Wall_98_Collision'>
+        <geometry>
+          <box>
+            <size>0.61 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_98_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.61 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/CeilingTiled</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-1.73 2.53248 0 0 -0 0</pose>
+    </link>
+    <link name='Wall_99'>
+      <static>true</static>
+      <collision name='Wall_99_Collision'>
+        <geometry>
+          <box>
+            <size>0.463071 0.01 0.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Wall_99_Visual'>
+        <cast_shadows>false</cast_shadows>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.463071 0.01 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>start_qr_code</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-1.43 2.30598 0 0 -0 -1.5708</pose>
+    </link>
+    <link name='Rolle_gross'>
+      <collision name='Rolle_gross_Collision'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 0.35 0.01</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.2 0 -0 0</pose>
+      </collision>
+      <visual name='Rolle_gross_Visual'>
+        <pose frame=''>0 0 0.3 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 0.35 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>rolle_gross</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.5 -2.0 0 0 0 0</pose>
+    </link>
+    <link name='Rolle_gross_seite1'>
+      <collision name='Rolle_gross_seite1_Collision'>
+        <geometry>
+          <box>
+            <size>1.2 0.01 0.2</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 -0 0</pose>
+      </collision>
+      <visual name='Rolle_gross_seite1_Visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 0.01 0.3</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>warenausgang1</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.5 -2.2 0.15 0 0 0</pose>
+    </link>
+    <link name='Rolle_gross_seite2'>
+      <collision name='Rolle_gross_seite2_Collision'>
+        <geometry>
+          <box>
+            <size>1.2 0.01 0.2</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 -0 0</pose>
+      </collision>
+      <visual name='Rolle_gross_seite2_Visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 0.01 0.3</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>warenausgang1</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-0.5 -1.8 0.15 0 0 0</pose>
+    </link>
+    <link name='Rolle_gross_t1'>
+      <collision name='Rolle_gross_t1_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 -0 0</pose>
+      </collision>
+      <visual name='Rolle_gross_t1_Visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/DarkGrey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.1 -2.2 0.4 0 0 0</pose>
+    </link>
+    <link name='Rolle_gross_t2'>
+      <collision name='Rolle_gross_t2_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 -0 0</pose>
+      </collision>
+      <visual name='Rolle_gross_t2_Visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/DarkGrey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>0.1 -1.8 0.4 0 0 0</pose>
+    </link>
+    <link name='Rolle_gross_t3'>
+      <collision name='Rolle_gross_t3_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 -0 0</pose>
+      </collision>
+      <visual name='Rolle_gross_t3_Visual'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/DarkGrey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-1.1 -2.2 0.4 0 0 0</pose>
+    </link>
+    <link name='Rolle_gross_t4'>
+      <collision name='Rolle_gross_t4_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.8</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 0 0</pose>
+      </collision>
+      <visual name='Rolle_gross_t4_Visual'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/DarkGrey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>-1.1 -1.8 0.4 0 0 0</pose>
+    </link>
+    <link name='Rolle_klein1'>
+      <collision name='Rolle_klein1_Collision'>
+        <geometry>
+          <box>
+            <size>0.35 0.7 0.01</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.2 0 0 0</pose>
+      </collision>
+      <visual name='Rolle_klein1_Visual'>
+        <pose frame=''>0 0 0.3 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.35 0.7 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>rolle_klein</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.6 -2.1 0 0 0 0</pose>
+    </link>
+    <link name='Rolle_klein_t1'>
+      <collision name='Rolle_klein_t1_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.6</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 0 0</pose>
+      </collision>
+      <visual name='Rolle_klein_t1_Visual'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://tgw_arena/materials/scripts</uri>
+            <uri>model://tgw_arena/materials/textures</uri>
+            <name>rolle_klein</name>
+          </script>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.8 -1.8 0.4 0 0 0</pose>
+    </link>
+    <link name='Rolle_klein_t2'>
+      <collision name='Rolle_klein_t2_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.6</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 0 0</pose>
+      </collision>
+      <visual name='Rolle_klein_t2_Visual'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/DarkGrey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.4 -1.8 0.4 0 0 0</pose>
+    </link>
+    <link name='Rolle_klein_t3'>
+      <collision name='Rolle_klein_t3_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.6</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 0 0</pose>
+      </collision>
+      <visual name='Rolle_klein_t3_Visual'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/DarkGrey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.8 -2.4 0.4 0 0 0</pose>
+    </link>
+    <link name='Rolle_klein_t4'>
+      <collision name='Rolle_klein_t4_Collision'>
+        <geometry>
+          <box>
+            <size>0.2 0.2 0.6</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.0 0 0 0</pose>
+      </collision>
+      <visual name='Rolle_klein_t4_Visual'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/DarkGrey</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+          <layer>0</layer>
+        </meta>
+      </visual>
+      <pose frame=''>1.4 -2.4 0.4 0 0 0</pose>
+    </link>
+    <static>1</static>
+  </model>
+</sdf>
